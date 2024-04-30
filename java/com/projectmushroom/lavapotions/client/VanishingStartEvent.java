@@ -57,6 +57,7 @@ public class VanishingStartEvent extends Event
 	@SubscribeEvent
 	public void onEntityTarget(LivingChangeTargetEvent event)
 	{
+		System.out.println("This was triggered");
 		LivingEntity target = event.getNewTarget();
 		if (target instanceof Player && target.hasEffect(LavaEffects.VANISHING.get()))
 		{

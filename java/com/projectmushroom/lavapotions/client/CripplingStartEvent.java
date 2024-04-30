@@ -32,10 +32,7 @@ public class CripplingStartEvent extends Event
 			if(entity.hasEffect(LavaEffects.CRIPPLING.get())== false)
 			{
 				entity.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addTransientModifier(crippling);
-				if (entity.getAttribute(Attributes.ATTACK_DAMAGE) != null)
-				{
-				    entity.getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(crippling);
-				}
+				entity.getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(crippling);
 				entity.getAttribute(Attributes.MOVEMENT_SPEED).addTransientModifier(crippling);
 			} 
 		}
@@ -48,10 +45,7 @@ public class CripplingStartEvent extends Event
 		if(event.getPotionEffect().getEffect().equals(LavaEffects.CRIPPLING.get())) 
 		{
 			entity.getAttribute(Attributes.KNOCKBACK_RESISTANCE).removeModifier(crippling);
-			if (entity.getAttribute(Attributes.ATTACK_DAMAGE) != null)
-			{
-			    entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(crippling);
-			}
+			entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(crippling);
 			entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(crippling);
 		}
 	}
@@ -63,10 +57,7 @@ public class CripplingStartEvent extends Event
 		if(event.getPotionEffect().getEffect().equals(LavaEffects.CRIPPLING.get())) 
 		{
 			entity.getAttribute(Attributes.KNOCKBACK_RESISTANCE).removeModifier(crippling);
-			if (entity.getAttribute(Attributes.ATTACK_DAMAGE) != null)
-			{
-			    entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(crippling);
-			}
+			entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(crippling);
 			entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(crippling);
 		}
 	}

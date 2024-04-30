@@ -16,42 +16,44 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = LavaPotions.MOD_ID)
-public class BurningSpeedStartEvent extends Event
+public class BurningSpeedStartEvent extends Event 
 {
+	
+
 	AttributeModifier burningspeed = new AttributeModifier(UUID.fromString("148f2676-f904-440b-9b98-2946b8f9234b"),
 			"burning_speed", 2.0D, AttributeModifier.Operation.ADDITION);
 	
-    @SubscribeEvent
-    public void onBurningSpeedStart(PotionAddedEvent event)
-    {
-    	LivingEntity entity = event.getEntityLiving();
-    	if (event.getPotionEffect().getEffect().equals(LavaEffects.BURNING_SPEED.get()))
-    	{
-    		if (entity.hasEffect(LavaEffects.BURNING_SPEED.get()) == false)
-    		{
-    			entity.getAttribute(Attributes.MOVEMENT_SPEED).addTransientModifier(burningspeed);
-    		}
-    	}
-    }
-    
-    @SubscribeEvent
-    public void onBurningSpeedEnd(PotionRemoveEvent event)
-    {
-    	LivingEntity entity = event.getEntityLiving();
-    	if (event.getPotionEffect().getEffect().equals(LavaEffects.BURNING_SPEED.get()))
-    	{
-            entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(burningspeed);
-    	}
-    }
-    
-    @SubscribeEvent
-    public void onBurningSpeedExpire(PotionExpiryEvent event)
-    {
-    	LivingEntity entity = event.getEntityLiving();
-    	if (event.getPotionEffect().getEffect().equals(LavaEffects.BURNING_SPEED.get()))
-    	{
-            entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(burningspeed);
-    	}
-    }
+	@SubscribeEvent
+	public void onBurningSpeedStart(PotionAddedEvent event) 
+	{
+		LivingEntity entity = event.getEntityLiving();
+		if(event.getPotionEffect().getEffect().equals(LavaEffects.BURNING_SPEED.get()))
+		{
+			if(entity.hasEffect(LavaEffects.BURNING_SPEED.get())== false)
+			{
+				entity.getAttribute(Attributes.MOVEMENT_SPEED).addTransientModifier(burningspeed);
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public void onBurningSpeedEnd(PotionRemoveEvent event) 
+	{
+		LivingEntity entity = event.getEntityLiving();
+		if(event.getPotionEffect().getEffect().equals(LavaEffects.BURNING_SPEED.get())) 
+		{
+			entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(burningspeed);
+		}
+	}
+	
+	@SubscribeEvent
+	public void onBurningSpeedExpire(PotionExpiryEvent event) 
+	{
+		LivingEntity entity = event.getEntityLiving();
+		if(event.getPotionEffect().getEffect().equals(LavaEffects.BURNING_SPEED.get())) 
+		{
+			entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(burningspeed);
+		}
+	}
+	
 }
-

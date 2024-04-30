@@ -22,7 +22,7 @@ public class SoulFlameStartEvent extends Event
 	@SubscribeEvent
 	public void onSoulFlameStart(PotionAddedEvent event)
 	{
-		if (event.getPotionEffect().getEffect().equals(LavaEffects.SOUL_FLAME.get()) && !event.getEntityLiving().hasEffect(LavaEffects.SOUL_FLAME.get()))
+		if (event.getPotionEffect().getEffect().equals(LavaEffects.SOUL_FLAME.get()))
 		{
 			dmgcount = 0;
 			deathcount = 0;
@@ -52,28 +52,21 @@ public class SoulFlameStartEvent extends Event
     @SubscribeEvent
     public void onSoulFlameActive(PlayerTickEvent event)
     {
-    	if (event.player.hasEffect(LavaEffects.SOUL_FLAME.get()) && !event.player.hasEffect(LavaEffects.INVINC.get()))
+    	if (event.player.hasEffect(LavaEffects.SOUL_FLAME.get()))
     	{
     		LivingEntity entity = event.player;
-    		int dmglimit = 10;
-    		int deathlimit = 1200;
-    		if (entity.hasEffect(LavaEffects.HELLISH.get()))
-    		{
-    			dmglimit = 20;
-    			deathlimit = 2400;
-    	    }
 			dmgcount += 1;
 			deathcount += 1;
 			if (entity.getHealth() > 1) 
 			{
 				System.out.println("Entity health > 1");
-				if (dmgcount >= dmglimit)
+				if (dmgcount >= 10)
 				{
 					entity.hurt(new DamageSource("Soul Flame"), 1);
 					dmgcount = 0;
 				}
 			}
-			if (deathcount >= deathlimit)
+			if (deathcount >= 1200)
 			{
 				entity.hurt(new DamageSource("Soul Flame"), 1000000);
 		        dmgcount = 0;

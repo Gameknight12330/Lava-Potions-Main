@@ -15,11 +15,14 @@ public class FieryRegenStartEvent extends Event
 {
     @SubscribeEvent
     public void onEntityHit(LivingHurtEvent event)
-     {
+   {
+    	System.out.println("Someone was hurt");
     	if (event.getEntityLiving().hasEffect(LavaEffects.FIERY_REGEN.get()))
     	{
+    		System.out.println("They have an effect");
     		if (event.getSource().getDirectEntity() instanceof LivingEntity)
     		{
+    			System.out.println("It was an attack");
     			event.getSource().getDirectEntity().hurt(DamageSource.GENERIC, (float) (event.getAmount() * 0.5));
     		}
     	}

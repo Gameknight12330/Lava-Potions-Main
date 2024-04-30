@@ -49,7 +49,7 @@ public class ViosStartEvent
 	AttributeModifier vios = new AttributeModifier(UUID.fromString("27ceda06-45b2-42b3-b5af-2589e140e7da"),
 			"vios", 5.0D, AttributeModifier.Operation.MULTIPLY_TOTAL);
 	AttributeModifier vios_speed = new AttributeModifier(UUID.fromString("912f3b0a-2b54-4140-a458-ca2d73af54bc"),
-			"vios_speed", 0.03D, AttributeModifier.Operation.ADDITION);
+			"vios_speed", +0.03D, AttributeModifier.Operation.ADDITION);
 	int timer = 0;
 	int timer2 = 0;
 	LivingEntity entity = null;
@@ -76,7 +76,6 @@ public class ViosStartEvent
 			}
 		}
 	}
-	
 	@SubscribeEvent
 	public void onPlayerClick(LeftClickBlock event)
 	{
@@ -101,7 +100,7 @@ public class ViosStartEvent
 			timer2 += 1;
 			if(!entity.hasEffect(LavaEffects.VIOS.get()))
 			{
-				dead = true;
+				dead  = true;
 			}
 			if(timer >= 1200)
 			{
@@ -190,7 +189,332 @@ public class ViosStartEvent
 							if(block instanceof WitherRoseBlock )
 							{
 								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
-						        System.out.println("there is a wither rose at " + x  +y + z);
+						        System.out.println("there is a wither rose at " + x  + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_PLANKS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_PLANKS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_FENCE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_FENCE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_BUTTON.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_BUTTON.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_PRESSURE_PLATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_PRESSURE_PLATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_DOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_DOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_TRAPDOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_TRAPDOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_FENCE_GATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_FENCE_GATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_SLAB.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_SLAB.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_SPRUCE_STAIRS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_STAIRS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_PLANKS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_PLANKS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_FENCE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_FENCE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_BUTTON.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_BUTTON.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_PRESSURE_PLATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_PRESSURE_PLATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_DOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_DOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_TRAPDOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_TRAPDOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_FENCE_GATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_FENCE_GATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_SLAB.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_SLAB.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_JUNGLE_STAIRS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_STAIRS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							
+							if(block == BlockInit.DEAD_DARK_OAK_PLANKS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_PLANKS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_FENCE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_FENCE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_BUTTON.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_BUTTON.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_PRESSURE_PLATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_PRESSURE_PLATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_DOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_DOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_TRAPDOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_TRAPDOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_FENCE_GATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_FENCE_GATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_SLAB.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_SLAB.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_DARK_OAK_STAIRS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.DARK_OAK_STAIRS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_PLANKS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_PLANKS.defaultBlockState(),
+							    Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_FENCE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_FENCE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_BUTTON.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_BUTTON.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_PRESSURE_PLATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_PRESSURE_PLATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_DOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_DOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_TRAPDOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_TRAPDOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_FENCE_GATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_FENCE_GATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_SLAB.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_SLAB.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_ACACIA_STAIRS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_STAIRS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_PLANKS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_PLANKS.defaultBlockState(),
+							    Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_FENCE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_FENCE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_BUTTON.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_BUTTON.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_PRESSURE_PLATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_PRESSURE_PLATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_DOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_DOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_TRAPDOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_TRAPDOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_FENCE_GATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_FENCE_GATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_SLAB.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_SLAB.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_BIRCH_STAIRS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_STAIRS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_PLANKS.get())
+							{
+							    level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_PLANKS.defaultBlockState(),
+							    Block.UPDATE_ALL);
+						        System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_FENCE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_FENCE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_BUTTON.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_BUTTON.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_PRESSURE_PLATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_PRESSURE_PLATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_DOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_DOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_TRAPDOOR.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_TRAPDOOR.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_FENCE_GATE.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_FENCE_GATE.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_SLAB.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_SLAB.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
+							}
+							if(block == BlockInit.DEAD_OAK_STAIRS.get())
+							{
+								level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.OAK_STAIRS.defaultBlockState(),
+								Block.UPDATE_ALL);
+							    System.out.println("there is a rotted plank at " + x + y + z);
 							}
 							if(block instanceof RotatedPillarBlock )
 							{
@@ -201,31 +525,31 @@ public class ViosStartEvent
 								    Block.UPDATE_ALL);
 							        System.out.println("there is a peice of dead wood at " + x + y + z);
 								}
-								if(wood == Blocks.STRIPPED_BIRCH_LOG)
+								if(wood == BlockInit.DEAD_BIRCH_LOG.get())
 								{
-									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.BIRCH_LOG.defaultBlockState(),
+									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.AIR.defaultBlockState(),
 								    Block.UPDATE_ALL);
 								    System.out.println("there is a peice of dead wood at " + x + y + z);
 								}
-								if(wood == Blocks.STRIPPED_ACACIA_LOG)
+								if(wood == BlockInit.DEAD_ACACIA_LOG.get())
 								{
-									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.ACACIA_LOG.defaultBlockState(),
+									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.AIR.defaultBlockState(),
 								    Block.UPDATE_ALL);
 								    System.out.println("there is a peice of dead wood at " + x + y + z);
 								}
-								if(wood == Blocks.STRIPPED_DARK_OAK_LOG)
+								if(wood == BlockInit.DEAD_DARK_OAK_LOG.get())
 								{
 									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.STRIPPED_DARK_OAK_LOG.defaultBlockState(),
 									Block.UPDATE_ALL);
 								    System.out.println("there is a peice of wood at " + x +y+ z);
 								}
-								if(wood == Blocks.STRIPPED_JUNGLE_LOG)
+								if(wood == BlockInit.DEAD_JUNGLE_LOG.get())
 								{
 									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.JUNGLE_LOG.defaultBlockState(),
 									Block.UPDATE_ALL);
 								    System.out.println("there is a peice of wood at " + x + y + z);
 								}
-								if(wood == Blocks.STRIPPED_SPRUCE_LOG)
+								if(wood == BlockInit.DEAD_SPRUCE_LOG.get())
 								{
 									level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() - y, entity.getBlockZ() - z), Blocks.SPRUCE_LOG.defaultBlockState(),
 									Block.UPDATE_ALL);
@@ -243,7 +567,7 @@ public class ViosStartEvent
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.FLOWER_FOREST).get().unwrap()))
 							    	{
 
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		if(rnd.nextInt(4) == 0)
 							    		{
 							    			level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.BIRCH_SAPLING.defaultBlockState(),
@@ -260,7 +584,7 @@ public class ViosStartEvent
 									|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.WINDSWEPT_GRAVELLY_HILLS).get().unwrap()))
 									{
 									    System.out.println("you're in a forest ");
-									    
+									    BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 									    if(rnd.nextInt(2) == 0)
 									    {
 									    	level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.SPRUCE_SAPLING.defaultBlockState(),
@@ -280,20 +604,20 @@ public class ViosStartEvent
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.SNOWY_PLAINS).get().unwrap())
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.FROZEN_RIVER).get().unwrap()))
 							    	{
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.SPRUCE_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
 
 							    	}
 							    	if(level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.DARK_FOREST).get().unwrap()))
 							    	{
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.DARK_OAK_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
 
 							    	}
 							    	if(level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.BIRCH_FOREST).get().unwrap())
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.OLD_GROWTH_BIRCH_FOREST).get().unwrap()))
 							    	{
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.BIRCH_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
 
 							    	}
@@ -301,7 +625,7 @@ public class ViosStartEvent
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.SPARSE_JUNGLE).get().unwrap())
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.BAMBOO_JUNGLE).get().unwrap()))
 							    	{
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.JUNGLE_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
 
 							    	}
@@ -311,14 +635,14 @@ public class ViosStartEvent
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.RIVER).get().unwrap())
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.WOODED_BADLANDS).get().unwrap()))
 							    	{
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.OAK_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
 							    	}
 							    	if(level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.SAVANNA).get().unwrap())
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.SAVANNA_PLATEAU).get().unwrap())
 							    	|| level.getBiome(blockpos).unwrap().equals(ForgeRegistries.BIOMES.getHolder(Biomes.WINDSWEPT_SAVANNA).get().unwrap()))
 							    	{
-							    		
+							    		BlockPos sapling = (new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z));
 							    		level.setBlock(new BlockPos(entity.getBlockX() - x, entity.getBlockY() -y + 1, entity.getBlockZ() - z), Blocks.ACACIA_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
 							    	}
 							    }

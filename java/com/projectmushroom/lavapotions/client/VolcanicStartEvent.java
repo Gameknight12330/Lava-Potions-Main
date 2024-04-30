@@ -64,24 +64,25 @@ public class VolcanicStartEvent extends Event
 		}
 	}
 	
-	@SubscribeEvent
-	public void onEntityHit(LivingHurtEvent event)
-	{
-        if (event.getSource().getDirectEntity() instanceof LivingEntity)
-		{
-		    LivingEntity entity = (LivingEntity) event.getSource().getDirectEntity();
-	    	if (entity.hasEffect(LavaEffects.VOLCANIC.get()))
-	    	{
-	    	    if (rand.nextFloat() > 0.95) 
+	  @SubscribeEvent
+	    public void onEntityHit(LivingHurtEvent event)
+	   {
+		    if (event.getSource().getDirectEntity() instanceof LivingEntity)
+		    {
+		    	LivingEntity entity = (LivingEntity) event.getSource().getDirectEntity();
+	    	    if (entity.hasEffect(LavaEffects.VOLCANIC.get()))
 	    	    {
-	    		    event.getEntityLiving().addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 300, 1));
-	    	    }
-	    	    if (rand.nextFloat() > 0.9) 
-	    	    {
-	    		    event.getEntityLiving().setSecondsOnFire(5);
-	        	}   
-	        }
+	    			if (rand.nextFloat() > 0.95) 
+	    			{
+	    				event.getEntityLiving().addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 300, 1));
+	    			}
+	    			
+	    			if (rand.nextFloat() > 0.9) 
+	    			{
+	    				event.getEntityLiving().setSecondsOnFire(5);
+	    			}
+	    		}
+	    	}
 	    }
-    }
 	
 }
