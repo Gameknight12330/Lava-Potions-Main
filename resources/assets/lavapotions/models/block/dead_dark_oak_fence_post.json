@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "lavapotions:block/dead_dark_oak_planks"
+  }
+}

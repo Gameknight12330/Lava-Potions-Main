@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "lavapotions:block/dead_jungle_planks"
+  }
+}

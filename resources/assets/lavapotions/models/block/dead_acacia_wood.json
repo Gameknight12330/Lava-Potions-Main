@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "particle": "lavapotions:block/dead_acacia_log_n",
+    "end": "lavapotions:block/dead_acacia_log_s",
+    "north": "lavapotions:block/dead_acacia_log_n",
+    "south": "lavapotions:block/dead_acacia_log_s",
+    "east": "lavapotions:block/dead_acacia_log_ew",
+    "west": "lavapotions:block/dead_acacia_log_ew"
+  }
+}
