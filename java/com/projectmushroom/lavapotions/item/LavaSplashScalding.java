@@ -8,9 +8,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class LavaSplashPotion extends LavaThrowablePotion {
+public class LavaSplashScalding extends LavaThrowableScalding {
 
-	public LavaSplashPotion(Properties properties) {
+	public LavaSplashScalding(Properties properties) {
 		super(properties);
 		// TODO Auto-generated constructor stub
 	}

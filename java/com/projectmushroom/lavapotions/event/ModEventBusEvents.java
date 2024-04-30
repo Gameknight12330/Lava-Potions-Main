@@ -3,20 +3,14 @@ package com.projectmushroom.lavapotions.event;
 import javax.annotation.Nonnull;
 
 import com.projectmushroom.lavapotions.LavaPotions;
-import com.projectmushroom.lavapotions.entity.Reaper;
 import com.projectmushroom.lavapotions.event.loot.EatenFishFromOcelotAdditionModifier;
 import com.projectmushroom.lavapotions.event.loot.GuardianEyeFromElderGuardianAdditionModifier;
 import com.projectmushroom.lavapotions.event.loot.RavagerHornFromRavagerAdditionModifier;
 import com.projectmushroom.lavapotions.event.loot.StriderFootFromStriderAdditionModifier;
-import com.projectmushroom.lavapotions.init.EntityInit;
-import com.projectmushroom.lavapotions.recipe.LavaBrewingCauldronRecipe;
 
-import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -41,15 +35,4 @@ public class ModEventBusEvents {
 		);
 		
 	}
-	
-	@SubscribeEvent
-	public static void registerAttributes(EntityAttributeCreationEvent event)
-	{
-		event.put(EntityInit.REAPER.get(), Reaper.createAttributes().build());
-	}
-	
-	@SubscribeEvent
-    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
-        Registry.register(Registry.RECIPE_TYPE, LavaBrewingCauldronRecipe.Type.ID, LavaBrewingCauldronRecipe.Type.INSTANCE);
-    }
 }

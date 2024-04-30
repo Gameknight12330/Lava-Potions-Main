@@ -1,12 +1,9 @@
 package com.projectmushroom.lavapotions.item;
 
-import java.util.List;
-
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -14,8 +11,8 @@ import net.minecraft.world.level.Level;
 
 public class LavaLingeringPotion extends LavaThrowableLingeringPotion{
 	
-	public LavaLingeringPotion(Item.Properties p_42836_, List<MobEffect> effects, List<Integer> durs, List<Integer> amps, int color) {
-	      super(p_42836_, effects, durs, amps, color);
+	public LavaLingeringPotion(Item.Properties p_42836_) {
+	      super(p_42836_);
 	   }
 
 	   public InteractionResultHolder<ItemStack> use(Level p_42843_, Player p_42844_, InteractionHand p_42845_) {

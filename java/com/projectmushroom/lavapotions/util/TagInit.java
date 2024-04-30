@@ -13,7 +13,22 @@ import net.minecraft.world.level.block.Block;
 public final class TagInit {
 	public static class Blocks {
         public static final TagKey<Block> DEAD_OAK_LOGS
-            = tag("dead_oak_logs");
+                = tag("dead_oak_logs");
+        
+        public static final TagKey<Block> DEAD_DARK_OAK_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Block> DEAD_JUNGLE_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Block> DEAD_ACACIA_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Block> DEAD_SPRUCE_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Block> DEAD_BIRCH_LOGS
+        = tag("dead_birch_logs");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(LavaPotions.MOD_ID, name));
@@ -28,8 +43,25 @@ public final class TagInit {
         public static final TagKey<Item> DEAD_OAK_LOGS
                 = tag("dead_oak_logs");
         
+        public static final TagKey<Item> DEAD_DARK_OAK_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Item> DEAD_JUNGLE_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Item> DEAD_ACACIA_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Item> DEAD_SPRUCE_LOGS
+        = tag("dead_oak_logs");
+        
+        public static final TagKey<Item> DEAD_BIRCH_LOGS
+        = tag("dead_birch_logs");
+        
         public static final TagKey<Item> LAVA_POTIONS
         = tag("lava_potions");
+
+		public static final TagKey<Item> REINFORCED_BOTTLE = tag("lava_potions");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(LavaPotions.MOD_ID, name));

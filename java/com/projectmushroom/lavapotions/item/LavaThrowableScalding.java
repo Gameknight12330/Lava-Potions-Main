@@ -1,6 +1,6 @@
 package com.projectmushroom.lavapotions.item;
 
-import com.projectmushroom.lavapotions.entity.LavaThrownPotion;
+import com.projectmushroom.lavapotions.entity.LavaThrownScalding;
 
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -10,19 +10,19 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class LavaThrowablePotion extends Item {
+public class LavaThrowableScalding extends Item {
 
-	public LavaThrowablePotion(Properties properties) {
+	public LavaThrowableScalding(Properties properties) {
 		super(properties);
 	}
 
 	   public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
 		  ItemStack itemstack = player.getItemInHand(hand);
 		  if (!level.isClientSide) {
-		     LavaThrownPotion lavathrownpotion = new LavaThrownPotion(level, player);
-		     lavathrownpotion.setItem(itemstack);
-		     lavathrownpotion.shootFromRotation(player, player.getXRot(), player.getYRot(), -20.0F, 0.5F, 1.0F);
-		     level.addFreshEntity(lavathrownpotion);
+		     LavaThrownScalding lavathrownscalding = new LavaThrownScalding(level, player);
+		     lavathrownscalding.setItem(itemstack);
+		     lavathrownscalding.shootFromRotation(player, player.getXRot(), player.getYRot(), -20.0F, 0.5F, 1.0F);
+		     level.addFreshEntity(lavathrownscalding);
 		  }
 		  
 		  player.awardStat(Stats.ITEM_USED.get(this));

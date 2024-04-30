@@ -28,7 +28,7 @@ import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.network.NetworkHooks;
 
-public class LavaThrownPotion extends ThrowableItemProjectile implements ItemSupplier {
+public class LavaThrownScalding extends ThrowableItemProjectile implements ItemSupplier {
 	
 	@Override
 	public Packet<?> getAddEntityPacket() {
@@ -38,20 +38,20 @@ public class LavaThrownPotion extends ThrowableItemProjectile implements ItemSup
 	public static final double SPLASH_RANGE = 4.0D;
 	public static final Predicate<LivingEntity> WATER_SENSITIVE = LivingEntity::isSensitiveToWater;
 
-	public LavaThrownPotion(EntityType<? extends LavaThrownPotion> p_37527_, Level p_37528_) {
+	public LavaThrownScalding(EntityType<? extends LavaThrownScalding> p_37527_, Level p_37528_) {
 	   super(p_37527_, p_37528_);
 	}
 
-	public LavaThrownPotion(Level p_37535_, LivingEntity p_37536_) {
-	   super(EntityInit.LAVA_THROWN_POTION.get(), p_37536_, p_37535_);
+	public LavaThrownScalding(Level p_37535_, LivingEntity p_37536_) {
+	   super(EntityInit.LAVA_THROWN_SCALDING.get(), p_37536_, p_37535_);
 	}
 
-	public LavaThrownPotion(Level p_37530_, double p_37531_, double p_37532_, double p_37533_) {
-	   super(EntityInit.LAVA_THROWN_POTION.get(), p_37531_, p_37532_, p_37533_, p_37530_);
+	public LavaThrownScalding(Level p_37530_, double p_37531_, double p_37532_, double p_37533_) {
+	   super(EntityInit.LAVA_THROWN_SCALDING.get(), p_37531_, p_37532_, p_37533_, p_37530_);
 	}
 
 	protected Item getDefaultItem() {
-	   return ItemInit.SPLASH_FLAME_HEALING.get();
+	   return ItemInit.SPLASH_SCALDING.get();
 	}
 	
 	public static AttributeSupplier.Builder createAttributes() {
@@ -78,15 +78,14 @@ public class LavaThrownPotion extends ThrowableItemProjectile implements ItemSup
 	protected void onHit(HitResult result) {
 	   super.onHit(result);
 	   if (!this.level.isClientSide) {
-	      this.applySplash(new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 
-	         new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 600), 
-	    	 MobEffects.HEAL, 20, 
+	      this.applySplash(new MobEffectInstance(MobEffects.BLINDNESS, 600, 1), 
+	    	 MobEffects.HARM, 1,
 	    	 result.getType() == HitResult.Type.ENTITY ? ((EntityHitResult)result).getEntity() : null);
 	   }
 	   this.discard();
 	}
 
-	private void applySplash(MobEffectInstance absorption, MobEffectInstance fire_res, MobEffect healing, int amplifier, @Nullable Entity p_37549_) {
+	private void applySplash(MobEffectInstance blindness, MobEffect harming, int amplifier, @Nullable Entity p_37549_) {
 	   AABB aabb = this.getBoundingBox().inflate(4.0D, 2.0D, 4.0D);
 	   List<LivingEntity> list = this.level.getEntitiesOfClass(LivingEntity.class, aabb);
 	   if (!list.isEmpty()) {
@@ -100,15 +99,11 @@ public class LavaThrownPotion extends ThrowableItemProjectile implements ItemSup
 	               if (livingentity == p_37549_) {
 	                  d1 = 1.0D;
 	               }
-	               healing.applyInstantenousEffect(this, this.getOwner(), livingentity, amplifier, d1);
-	               int i = (int)(d1 * (double)absorption.getDuration() + 0.5D);
+	               harming.applyInstantenousEffect(this, this.getOwner(), livingentity, amplifier, d1);
+	               int i = (int)(d1 * (double)blindness.getDuration() + 0.5D);
 	               if (i > 20) {
-	                  livingentity.addEffect(new MobEffectInstance(absorption), entity);
+	                  livingentity.addEffect(new MobEffectInstance(blindness), entity);
 	               }
-	               int x = (int)(d1 * (double)fire_res.getDuration() + 0.5D);
-	               if (x > 20) {
-		              livingentity.addEffect(new MobEffectInstance(fire_res), entity);
-		           }
 	            }
 	         }
 	      }
