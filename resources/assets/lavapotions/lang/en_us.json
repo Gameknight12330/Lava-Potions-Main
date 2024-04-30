@@ -1,77 +1,74 @@
 {
-    "item.lavapotions.reinforced_bottle": "Reinforced Bottle",
-    "item.lavapotions.lava_bottle": "Bottle of Lava",
+    
     "itemGroup.lavapotions": "Lava Potions",
     "itemGroup.dead_wood": "Dead Wood",
     "itemGroup.taco": "Taco",
+    "itemGroup.dead_stuff": "Dead_Stuff",
+    
+    "item.lavapotions.reinforced_bottle": "Reinforced Bottle",
+    "item.lavapotions.lava_bottle": "Bottle of Lava",
     "item.lavapotions.guardian_eye": "Elder Guardian Eye",
     "item.lavapotions.ravager_horn": "Ravager Horn",
     "item.lavapotions.eaten_fish": "Eaten Fish",
     "item.lavapotions.strider_foot": "Strider Foot",
     
+    
+    "item.lavapotions.taco": "Taco",
+    "item.lavapotions.burrito": "Burrito",
+    "item.lavapotions.dough": "Dough",
+    "item.lavapotions.uncooked_tortilla": "Uncooked Tortilla",
+    "item.lavapotions.cooked_tortilla": "Coocked Tortilla",
+    "item.lavapotions.taco_shell": "Taco Shell",
+    "item.lavapotions.cheese_bucket": "Cheese Bucket",
+    "item.lavapotions.lettuce_seeds": "Lettuce Seeds",
+    "item.lavapotions.lettuce": "Lettuce",
+    "block.lavapotions.lettuce_plant": "Lettuce Plant",
+    "item.lavapotions.tomato_seeds": "Tomato Seeds",
+     "item.lavapotions.tomato": "Tomato",
+    "block.lavapotions.toamto_plant": "Tomato Plant",
+    
+    
     "item.lavapotions.flame_healing": "Potion of Flame Healing",
     "item.lavapotions.splash_flame_healing": "Splash Potion of Flame Healing",
     "item.lavapotions.lingering_flame_healing": "Lingering Potion of Flame Healing",
-    
     "item.lavapotions.invinc": "Potion of Invincibility",
     "effect.lavapotions.invinc": "Invincibility",
-    
     "item.lavapotions.crippling": "Potion of Crippling Weakness",
     "effect.lavapotions.crippling": "Crippling Weakness",
-    
     "item.lavapotions.scalding": "Potion of Scalding Burn",
     "item.lavapotions.splash_scalding": "Splash Potion of Scalding Burn",
-    
     "item.lavapotions.volcanic": "Potion of Volcanic Strength",
     "effect.lavapotions.volcanic": "Volcanic Strength",
-    
     "item.lavapotions.hellish": "Potion of Hellish Resistance",
     "effect.lavapotions.hellish": "Hellish Resistance",
-    
     "item.lavapotions.striding": "Potion of Lava Striding",
     "effect.lavapotions.striding": "Lava Striding",
-    
     "item.lavapotions.vanishing": "Potion of Vanishing",
     "effect.lavapotions.vanishing": "Vanishing",
-    
     "item.lavapotions.highway": "Highway to Hell",
     "effect.lavapotions.highway": "Highway to Hell",
     "death.attack.Highway": "%1$s went out on their own terms",
-    
     "item.lavapotions.burning_speed": "Potion of Burning Speed",
     "effect.lavapotions.burning_speed": "Burning Speed",
-    
+    "item.lavapotions.marking": "Potion of Marking",
     "item.lavapotions.soul_flame": "Potion of Soul Flame",
     "effect.lavapotions.soul_flame": "Soul Flame",
     "death.attack.Soul Flame": "%1$s had their soul incinerated",
-    
-    "item.lavapotions.telikos": "Telikós",
-    "effect.lavapotions.telikos": "Telikós",
+    "item.lavapotions.theos": "Theós",
+    "effect.lavapotions.theos": "Theós",
     "death.attack.God": "%1$s was smited by God",
-    
     "item.lavapotions.thanatos": "Thánatos",
     "effect.lavapotions.thanatos": "Thánatos",
-    "death.attack.Devil": "%1$s faced the rapture",  
-    
-    "death.attack.Reaper": "%1$s feared the Reaper",
-
+    "death.attack.Devil": "%1$s faced the rapture",
     "item.lavapotions.vios": "Víos",
     "effect.lavapotions.vios": "Víos",
-    
     "item.lavapotions.fiery_regen": "Potion of Fiery Regeneration",
     "effect.lavapotions.fiery_regen": "Fiery Regeneration",
-    
     "item.lavapotions.lava_striding": "Potion of Lava Striding",
     "effect.lavapotions.lava_striding": "Lava Striding",
-    
-    "entity.lavapotions.lava_thrown_potion": "Lava Thrown Potion",
     "item.lavapotions.stairway": "Stairway to Heaven",
+    "effect.lavapotions.stairway": "Stairway to Heaven",
     
-    "entity.lavapotions.reaper": "The Red Reaper",
-    
-    "block.lavapotions.lava_brewing_cauldron": "Lava Brewing Cauldron",
-    
-    "block.lavapotions.dead_dirt_block": "Dead Dirt Block",
     
     "block.lavapotions.dead_oak_wood": "Dead Oak Wood",
     "block.lavapotions.dead_oak_log": "Dead Oak Log",
@@ -88,15 +85,78 @@
     "block.lavapotions.dead_oak_trapdoor": "Dead Oak Trapdoor",
     "block.lavapotions.dead_oak_sign": "Dead Oak Sign",
     
-    "item.lavapotions.dough": "Dough",
-    "item.lavapotions.uncooked_tortilla": "Uncooked Tortilla",
-    "item.lavapotions.cooked_tortilla": "Cooked Tortilla",
-    "item.lavapotions.taco_shell": "Taco Shell",
-    "item.lavapotions.cheese_bucket": "Bucket of Cheese",
-    "item.lavapotions.lettuce": "Lettuce",
-    "item.lavapotions.tomato": "Tomato",
-    "item.lavapotions.taco": "Taco",
-    "item.lavapotions.burrito": "Burrito",
-    "item.lavapotions.tomato_seeds": "Tomato Seeds",
-    "item.lavapotions.lettuce_seeds": "Lettuce Seeds"
+    "block.lavapotions.dead_birch_wood": "Dead Birch Wood",
+    "block.lavapotions.dead_birch_log": "Dead Birch Log",
+    "block.lavapotions.stripped_dead_birch_wood": "Stripped Dead Birch Wood",
+    "block.lavapotions.stripped_dead_birch_log": "Stripped Dead Birch Log",
+    "block.lavapotions.dead_birch_planks": "Dead Birch Planks",
+    "block.lavapotions.dead_birch_stairs": "Dead Birch Stairs",
+    "block.lavapotions.dead_birch_slab": "Dead Birch Slab",
+    "block.lavapotions.dead_birch_fence": "Dead Birch Fence",
+    "block.lavapotions.dead_birch_fence_gate": "Dead Birch Fence Gate",
+    "block.lavapotions.dead_birch_button": "Dead Birch Button",
+    "block.lavapotions.dead_birch_pressure_plate": "Dead Birch Pressure Plate",
+    "block.lavapotions.dead_birch_door": "Dead Birch Door",
+    "block.lavapotions.dead_birch_trapdoor": "Dead Birch Trapdoor",
+    "block.lavapotions.dead_birch_sign": "Dead Birch Sign",
+    
+    "block.lavapotions.dead_acacia_wood": "Dead Acacia Wood",
+    "block.lavapotions.dead_acacia_log": "Dead Acacia Log",
+    "block.lavapotions.stripped_dead_acacia_wood": "Stripped Dead Acacia Wood",
+    "block.lavapotions.stripped_dead_acacia_log": "Stripped Dead Acacia Log",
+    "block.lavapotions.dead_acacia_planks": "Dead Acacia Planks",
+    "block.lavapotions.dead_acacia_stairs": "Dead Acacia Stairs",
+    "block.lavapotions.dead_acacia_slab": "Dead Acacia Slab",
+    "block.lavapotions.dead_acacia_fence": "Dead Acacia Fence",
+    "block.lavapotions.dead_acacia_fence_gate": "Dead Acacia Fence Gate",
+    "block.lavapotions.dead_acacia_button": "Dead Acacia Button",
+    "block.lavapotions.dead_acacia_pressure_plate": "Dead Acacia Pressure Plate",
+    "block.lavapotions.dead_acacia_door": "Dead Acacia Door",
+    "block.lavapotions.dead_acacia_trapdoor": "Dead Acacia Trapdoor",
+    "block.lavapotions.dead_acacia_sign": "Dead Acacia Sign",
+    
+    "block.lavapotions.dead_jungle_wood": "Dead Jungle Wood",
+    "block.lavapotions.dead_jungle_log": "Dead Jungle Log",
+    "block.lavapotions.stripped_dead_jungle_wood": "Stripped Dead Jungle Wood",
+    "block.lavapotions.stripped_dead_jungle_log": "Stripped Dead Jungle Log",
+    "block.lavapotions.dead_jungle_planks": "Dead Jungle Planks",
+    "block.lavapotions.dead_jungle_stairs": "Dead Jungle Stairs",
+    "block.lavapotions.dead_jungle_slab": "Dead Jungle Slab",
+    "block.lavapotions.dead_jungle_fence": "Dead Jungle Fence",
+    "block.lavapotions.dead_jungle_fence_gate": "Dead Jungle Fence Gate",
+    "block.lavapotions.dead_jungle_button": "Dead Jungle Button",
+    "block.lavapotions.dead_jungle_pressure_plate": "Dead Jungle Pressure Plate",
+    "block.lavapotions.dead_jungle_door": "Dead Jungle Door",
+    "block.lavapotions.dead_jungle_trapdoor": "Dead Jungle Trapdoor",
+    "block.lavapotions.dead_jungle_sign": "Dead Jungle Sign",
+    
+    "block.lavapotions.dead_spruce_wood": "Dead Spruce Wood",
+    "block.lavapotions.dead_spruce_log": "Dead Spruce Log",
+    "block.lavapotions.stripped_dead_spruce_wood": "Stripped Dead Spruce Wood",
+    "block.lavapotions.stripped_dead_spruce_log": "Stripped Dead Spruce Log",
+    "block.lavapotions.dead_spruce_planks": "Dead Spruce Planks",
+    "block.lavapotions.dead_spruce_stairs": "Dead Spruce Stairs",
+    "block.lavapotions.dead_spruce_slab": "Dead Spruce Slab",
+    "block.lavapotions.dead_spruce_fence": "Dead Spruce Fence",
+    "block.lavapotions.dead_spruce_fence_gate": "Dead Spruce Fence Gate",
+    "block.lavapotions.dead_spruce_button": "Dead Spruce Button",
+    "block.lavapotions.dead_spruce_pressure_plate": "Dead Spruce Pressure Plate",
+    "block.lavapotions.dead_spruce_door": "Dead Spruce Door",
+    "block.lavapotions.dead_spruce_trapdoor": "Dead Spruce Trapdoor",
+    "block.lavapotions.dead_spruce_sign": "Dead Spruce Sign",
+    
+    "block.lavapotions.dead_dark_oak_wood": "Dead Dark Oak Wood",
+    "block.lavapotions.dead_dark_oak_log": "Dead Dark Oak Log",
+    "block.lavapotions.stripped_dead_dark_oak_wood": "Stripped Dead Dark Oak Wood",
+    "block.lavapotions.stripped_dead_dark_oak_log": "Stripped Dead Dark Oak Log",
+    "block.lavapotions.dead_dark_oak_planks": "Dead Dark Oak Planks",
+    "block.lavapotions.dead_dark_oak_stairs": "Dead Dark Oak Stairs",
+    "block.lavapotions.dead_dark_oak_slab": "Dead Dark Oak Slab",
+    "block.lavapotions.dead_dark_oak_fence": "Dead Dark Oak Fence",
+    "block.lavapotions.dead_dark_oak_fence_gate": "Dead Dark Oak Fence Gate",
+    "block.lavapotions.dead_dark_oak_button": "Dead Dark Oak Button",
+    "block.lavapotions.dead_dark_oak_pressure_plate": "Dead Dark Oak Pressure Plate",
+    "block.lavapotions.dead_dark_oak_door": "Dead Dark Oak Door",
+    "block.lavapotions.dead_dark_oak_trapdoor": "Dead Dark Oak Trapdoor",
+    "block.lavapotions.dead_dark_oak_sign": "Dead Dark Oak Sign"
 }
