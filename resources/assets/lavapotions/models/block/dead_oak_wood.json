@@ -1,7 +1,11 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "lavapotions:block/dead_oak_log",
-    "side": "lavapotions:block/dead_oak_log"
+    "particle": "lavapotions:block/dead_oak_log_n",
+    "end": "lavapotions:block/dead_oak_log_s",
+    "north": "lavapotions:block/dead_oak_log_n",
+    "south": "lavapotions:block/dead_oak_log_s",
+    "east": "lavapotions:block/dead_oak_log_e",
+    "west": "lavapotions:block/dead_oak_log_w"
   }
 }
