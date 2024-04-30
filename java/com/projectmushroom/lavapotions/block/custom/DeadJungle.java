@@ -15,9 +15,9 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 
-public class DeadOak extends RotatedPillarBlock{
+public class DeadJungle extends RotatedPillarBlock{
 	
-	public DeadOak(Properties properties) {
+	public DeadJungle(Properties properties) {
         super(properties);
     }
 
@@ -41,11 +41,11 @@ public class DeadOak extends RotatedPillarBlock{
     public BlockState getToolModifiedState(BlockState state, Level world, BlockPos pos, Player player,
                                            ItemStack stack, ToolAction toolAction) {
         if(stack.getItem() instanceof AxeItem) {
-            if(state.is(BlockInit.DEAD_OAK_LOG.get())) {
-                return BlockInit.STRIPPED_DEAD_OAK_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(BlockInit.DEAD_JUNGLE_LOG.get())) {
+                return BlockInit.STRIPPED_DEAD_JUNGLE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-            if(state.is(BlockInit.DEAD_OAK_WOOD.get())) {
-                return BlockInit.STRIPPED_DEAD_OAK_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(BlockInit.DEAD_JUNGLE_WOOD.get())) {
+                return BlockInit.STRIPPED_DEAD_JUNGLE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
 
