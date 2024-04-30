@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "lavapotions:ravager_horn",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 1
+            },
+            {
+              "condition": "minecraft:killed_by_player",
+              "inverse": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
