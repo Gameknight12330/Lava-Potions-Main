@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "particle": "lavapotions:block/stripped_dead_dark_oak_log_n",
+    "up": "lavapotions:block/stripped_dead_dark_oak_log_n",
+    "down": "lavapotions:block/stripped_dead_dark_oak_log_s",
+    "north": "lavapotions:block/stripped_dead_dark_oak_log_n",
+    "east": "lavapotions:block/stripped_dead_dark_oak_log_e",
+    "south": "lavapotions:block/stripped_dead_dark_oak_log_s",
+    "west": "lavapotions:block/stripped_dead_dark_oak_log_w"
+  }
+}
