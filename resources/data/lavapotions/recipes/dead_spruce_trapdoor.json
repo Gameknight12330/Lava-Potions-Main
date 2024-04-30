@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "lavapotions:dead_oak_planks"
+      "item": "lavapotions:dead_spruce_planks"
     }
   },
   "result": {
-    "item": "lavapotions:dead_oak_trapdoor",
+    "item": "lavapotions:dead_spruce_trapdoor",
     "count": 2
   }
 }

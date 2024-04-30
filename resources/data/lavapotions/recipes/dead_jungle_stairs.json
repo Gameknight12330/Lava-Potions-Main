@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "lavapotions:dead_oak_planks"
+      "item": "lavapotions:dead_jungle_planks"
     }
   },
   "result": {
-    "item": "lavapotions:dead_oak_stairs",
+    "item": "lavapotions:dead_jungle_stairs",
     "count": 4
   }
 }

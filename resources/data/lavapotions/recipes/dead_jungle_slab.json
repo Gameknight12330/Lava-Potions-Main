@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "lavapotions:dead_oak_planks"
+      "item": "lavapotions:dead_jungle_planks"
     }
   },
   "result": {
-    "item": "lavapotions:dead_oak_slab",
+    "item": "lavapotions:dead_jungle_slab",
     "count": 6
   }
 }

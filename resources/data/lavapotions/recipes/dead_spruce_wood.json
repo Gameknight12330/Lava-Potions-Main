@@ -9,12 +9,12 @@
     {
         "1":
         {
-            "item": "lavapotions:dead_oak_log"
+            "item": "lavapotions:dead_spruce_log"
         }
     },
     "result":
     {
-        "item": "lavapotions:dead_oak_wood",
+        "item": "lavapotions:dead_spruce_wood",
         "count": 3
     }
 }

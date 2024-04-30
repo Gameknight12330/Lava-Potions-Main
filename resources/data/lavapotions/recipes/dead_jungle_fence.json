@@ -7,14 +7,14 @@
   ],
   "key": {
     "W": {
-      "item": "lavapotions:dead_oak_planks"
+      "item": "lavapotions:dead_jungle_planks"
     },
     "#": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "lavapotions:dead_oak_fence",
+    "item": "lavapotions:dead_jungle_fence",
     "count": 3
   }
 }

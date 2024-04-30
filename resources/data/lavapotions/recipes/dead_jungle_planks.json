@@ -4,12 +4,12 @@
     "ingredients": 
     [
        {
-           "tag": "lavapotions:dead_oak_logs"
+           "tag": "lavapotions:dead_jungle_logs"
        }
     ],
     "result": 
     {
-        "item": "lavapotions:dead_oak_planks",
+        "item": "lavapotions:dead_jungle_planks",
         "count": 4
     }
 }
