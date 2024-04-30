@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lavapotions:dead_oak_log"
+          "name": "lavapotions:stripped_dead_spruce_wood"
         }
       ],
       "conditions": [

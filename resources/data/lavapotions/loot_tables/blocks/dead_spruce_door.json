@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lavapotions:dead_oak_door",
+          "name": "lavapotions:dead_spruce_door",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "lavapotions:dead_oak_door",
+              "block": "lavapotions:dead_spruce_door",
               "properties": {
                 "half": "lower"
               }

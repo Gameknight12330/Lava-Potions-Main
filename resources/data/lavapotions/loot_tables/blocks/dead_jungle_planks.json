@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lavapotions:dead_oak_log"
+          "name": "lavapotions:dead_jungle_planks"
         }
       ],
       "conditions": [

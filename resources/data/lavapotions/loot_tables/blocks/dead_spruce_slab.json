@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lavapotions:dead_oak_slab",
+          "name": "lavapotions:dead_spruce_slab",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -16,7 +16,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "lavapotions:dead_oak_slab",
+                  "block": "lavapotions:dead_spruce_slab",
                   "properties": {
                     "type": "double"
                   }
