@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "lavapotions:dead_spruce_log",
+    "lavapotions:dead_spruce_wood",
+    "lavapotions:stripped_dead_spruce_log",
+    "lavapotions:stripped_dead_spruce_wood"
+  ]
+}
