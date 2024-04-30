@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "lavapotions:dead_oak_fence"
+    "lavapotions:dead_oak_fence",
+    "lavapotions:dead_birch_fence",
+    "lavapotions:dead_acacia_fence",
+    "lavapotions:dead_jungle_fence",
+    "lavapotions:dead_spruce_fence",
+    "lavapotions:dead_dark_oak_fence"
   ]
 }

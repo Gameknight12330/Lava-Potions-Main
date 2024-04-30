@@ -1,6 +1,11 @@
 {
     "replace": false,
     "values": [
-        "#lavapotions:dead_oak_logs"
+        "#lavapotions:dead_oak_logs",
+        "#lavapotions:dead_birch_logs",
+        "#lavapotions:dead_dark_oak_logs",
+        "#lavapotions:dead_spruce_logs",
+        "#lavapotions:dead_jungle_logs",
+        "#lavapotions:dead_acacia_logs"
     ]
 }
