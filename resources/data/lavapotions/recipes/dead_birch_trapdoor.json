@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "lavapotions:dead_birch_planks"
+    }
+  },
+  "result": {
+    "item": "lavapotions:dead_birch_trapdoor",
+    "count": 2
+  }
+}

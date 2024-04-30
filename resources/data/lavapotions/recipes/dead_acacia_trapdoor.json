@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "lavapotions:dead_acacia_planks"
+    }
+  },
+  "result": {
+    "item": "lavapotions:dead_acacia_trapdoor",
+    "count": 2
+  }
+}
