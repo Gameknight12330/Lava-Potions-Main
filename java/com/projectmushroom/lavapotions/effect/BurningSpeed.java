@@ -11,7 +11,7 @@ public class BurningSpeed extends MobEffect {
 	}
 	
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-        super.applyEffectTick(entity, amplifier);
+		super.applyEffectTick(entity, amplifier);
 	}
 	
 	public boolean isDurationEffectTick(int duration, int amplifier) {

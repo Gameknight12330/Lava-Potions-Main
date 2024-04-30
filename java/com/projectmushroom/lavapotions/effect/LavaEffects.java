@@ -42,11 +42,11 @@ public class LavaEffects {
 	public static final RegistryObject<MobEffect> HELLISH = LAVA_EFFECTS.register("hellish", 
 			() -> new Hellish(MobEffectCategory.BENEFICIAL, 16727150));
 	
-	public static final RegistryObject<MobEffect> TELIKOS = LAVA_EFFECTS.register("telikos", 
-			() -> new Telikos(MobEffectCategory.BENEFICIAL, 16777215));
+	public static final RegistryObject<MobEffect> THEOS = LAVA_EFFECTS.register("theos", 
+			() -> new Theos(MobEffectCategory.BENEFICIAL, 16777215));
 	
 	public static final RegistryObject<MobEffect> THANATOS = LAVA_EFFECTS.register("thanatos", 
-			() -> new Thanatos(MobEffectCategory.BENEFICIAL, 526662));
+			() -> new Thanatos(MobEffectCategory.HARMFUL, 526662));
 	
 	public static final RegistryObject<MobEffect> VIOS = LAVA_EFFECTS.register("vios", 
 			() -> new Vios(MobEffectCategory.BENEFICIAL, 32795));
@@ -57,8 +57,4 @@ public class LavaEffects {
 	public static final RegistryObject<MobEffect> SOLDIER = LAVA_EFFECTS.register("soldier", 
 			() -> new Soldier(MobEffectCategory.BENEFICIAL, 16773766));
 	
-	public static final RegistryObject<MobEffect> UNDEAD = LAVA_EFFECTS.register("undead", 
-			() -> new Undead(MobEffectCategory.BENEFICIAL, 7736844));
-	
-
 }

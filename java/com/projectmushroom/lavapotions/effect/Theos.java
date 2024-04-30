@@ -4,9 +4,9 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 
-public class Hellish extends MobEffect {
+public class Theos extends MobEffect {
 
-	public Hellish(MobEffectCategory category, int amplifier) {
+	public Theos(MobEffectCategory category, int amplifier) {
 		super(category, amplifier);
 	}
 	

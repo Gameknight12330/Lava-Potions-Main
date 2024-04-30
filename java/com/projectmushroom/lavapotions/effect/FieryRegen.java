@@ -14,7 +14,7 @@ public class FieryRegen extends MobEffect {
 		if (entity.getHealth() < entity.getMaxHealth()) 
 		{
             entity.heal(0.5F);
-        }
+          }
 	}
 	
 	public boolean isDurationEffectTick(int duration, int amplifier) {
