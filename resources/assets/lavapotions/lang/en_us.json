@@ -1,0 +1,102 @@
+{
+    "item.lavapotions.reinforced_bottle": "Reinforced Bottle",
+    "item.lavapotions.lava_bottle": "Bottle of Lava",
+    "itemGroup.lavapotions": "Lava Potions",
+    "itemGroup.dead_wood": "Dead Wood",
+    "itemGroup.taco": "Taco",
+    "item.lavapotions.guardian_eye": "Elder Guardian Eye",
+    "item.lavapotions.ravager_horn": "Ravager Horn",
+    "item.lavapotions.eaten_fish": "Eaten Fish",
+    "item.lavapotions.strider_foot": "Strider Foot",
+    
+    "item.lavapotions.flame_healing": "Potion of Flame Healing",
+    "item.lavapotions.splash_flame_healing": "Splash Potion of Flame Healing",
+    "item.lavapotions.lingering_flame_healing": "Lingering Potion of Flame Healing",
+    
+    "item.lavapotions.invinc": "Potion of Invincibility",
+    "effect.lavapotions.invinc": "Invincibility",
+    
+    "item.lavapotions.crippling": "Potion of Crippling Weakness",
+    "effect.lavapotions.crippling": "Crippling Weakness",
+    
+    "item.lavapotions.scalding": "Potion of Scalding Burn",
+    "item.lavapotions.splash_scalding": "Splash Potion of Scalding Burn",
+    
+    "item.lavapotions.volcanic": "Potion of Volcanic Strength",
+    "effect.lavapotions.volcanic": "Volcanic Strength",
+    
+    "item.lavapotions.hellish": "Potion of Hellish Resistance",
+    "effect.lavapotions.hellish": "Hellish Resistance",
+    
+    "item.lavapotions.striding": "Potion of Lava Striding",
+    "effect.lavapotions.striding": "Lava Striding",
+    
+    "item.lavapotions.vanishing": "Potion of Vanishing",
+    "effect.lavapotions.vanishing": "Vanishing",
+    
+    "item.lavapotions.highway": "Highway to Hell",
+    "effect.lavapotions.highway": "Highway to Hell",
+    "death.attack.Highway": "%1$s went out on their own terms",
+    
+    "item.lavapotions.burning_speed": "Potion of Burning Speed",
+    "effect.lavapotions.burning_speed": "Burning Speed",
+    
+    "item.lavapotions.soul_flame": "Potion of Soul Flame",
+    "effect.lavapotions.soul_flame": "Soul Flame",
+    "death.attack.Soul Flame": "%1$s had their soul incinerated",
+    
+    "item.lavapotions.telikos": "Telikós",
+    "effect.lavapotions.telikos": "Telikós",
+    "death.attack.God": "%1$s was smited by God",
+    
+    "item.lavapotions.thanatos": "Thánatos",
+    "effect.lavapotions.thanatos": "Thánatos",
+    "death.attack.Devil": "%1$s faced the rapture",  
+    
+    "death.attack.Reaper": "%1$s feared the Reaper",
+
+    "item.lavapotions.vios": "Víos",
+    "effect.lavapotions.vios": "Víos",
+    
+    "item.lavapotions.fiery_regen": "Potion of Fiery Regeneration",
+    "effect.lavapotions.fiery_regen": "Fiery Regeneration",
+    
+    "item.lavapotions.lava_striding": "Potion of Lava Striding",
+    "effect.lavapotions.lava_striding": "Lava Striding",
+    
+    "entity.lavapotions.lava_thrown_potion": "Lava Thrown Potion",
+    "item.lavapotions.stairway": "Stairway to Heaven",
+    
+    "entity.lavapotions.reaper": "The Red Reaper",
+    
+    "block.lavapotions.lava_brewing_cauldron": "Lava Brewing Cauldron",
+    
+    "block.lavapotions.dead_dirt_block": "Dead Dirt Block",
+    
+    "block.lavapotions.dead_oak_wood": "Dead Oak Wood",
+    "block.lavapotions.dead_oak_log": "Dead Oak Log",
+    "block.lavapotions.stripped_dead_oak_wood": "Stripped Dead Oak Wood",
+    "block.lavapotions.stripped_dead_oak_log": "Stripped Dead Oak Log",
+    "block.lavapotions.dead_oak_planks": "Dead Oak Planks",
+    "block.lavapotions.dead_oak_stairs": "Dead Oak Stairs",
+    "block.lavapotions.dead_oak_slab": "Dead Oak Slab",
+    "block.lavapotions.dead_oak_fence": "Dead Oak Fence",
+    "block.lavapotions.dead_oak_fence_gate": "Dead Oak Fence Gate",
+    "block.lavapotions.dead_oak_button": "Dead Oak Button",
+    "block.lavapotions.dead_oak_pressure_plate": "Dead Oak Pressure Plate",
+    "block.lavapotions.dead_oak_door": "Dead Oak Door",
+    "block.lavapotions.dead_oak_trapdoor": "Dead Oak Trapdoor",
+    "block.lavapotions.dead_oak_sign": "Dead Oak Sign",
+    
+    "item.lavapotions.dough": "Dough",
+    "item.lavapotions.uncooked_tortilla": "Uncooked Tortilla",
+    "item.lavapotions.cooked_tortilla": "Cooked Tortilla",
+    "item.lavapotions.taco_shell": "Taco Shell",
+    "item.lavapotions.cheese_bucket": "Bucket of Cheese",
+    "item.lavapotions.lettuce": "Lettuce",
+    "item.lavapotions.tomato": "Tomato",
+    "item.lavapotions.taco": "Taco",
+    "item.lavapotions.burrito": "Burrito",
+    "item.lavapotions.tomato_seeds": "Tomato Seeds",
+    "item.lavapotions.lettuce_seeds": "Lettuce Seeds"
+}

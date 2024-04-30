@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "lavapotions:block/dead_oak_planks"
+  }
+}

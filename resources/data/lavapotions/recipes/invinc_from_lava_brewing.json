@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:netherite_ingot"
+        },
+        {
+            "item": "minecraft:diamond"
+        },
+        {
+            "item": "minecraft:totem_of_undying"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:invinc"
+    }
+}

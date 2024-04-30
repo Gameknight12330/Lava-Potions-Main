@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:amethyst_shard"
+        },
+        {
+            "item": "minecraft:ghast_tear"
+        },
+        {
+            "item": "minecraft:cooked_porkchop"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:fiery_regen"
+    }
+}

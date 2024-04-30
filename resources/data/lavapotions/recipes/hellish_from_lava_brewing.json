@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:blaze_rod"
+        },
+        {
+            "item": "minecraft:magma_cream"
+        },
+        {
+            "item": "minecraft:prismarine_shard"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:hellish"
+    }
+}

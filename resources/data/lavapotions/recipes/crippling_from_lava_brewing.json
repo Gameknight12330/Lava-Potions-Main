@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:coal"
+        },
+        {
+            "item": "minecraft:chicken"
+        },
+        {
+            "item": "minecraft:cod"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:crippling"
+    }
+}

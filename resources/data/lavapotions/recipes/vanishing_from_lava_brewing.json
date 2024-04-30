@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "lavapotions:guardian_eye"
+        },
+        {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        {
+            "item": "minecraft:ender_eye"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:vanishing"
+    }
+}

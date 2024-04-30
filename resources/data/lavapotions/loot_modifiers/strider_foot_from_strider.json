@@ -1,0 +1,10 @@
+{
+    "conditions": [
+        {
+            "condition": "forge:loot_table_id",
+            "loot_table_id": "minecraft:entities/strider"
+        }
+    ],
+    "addition": "lavapotions:strider_foot",
+    "type": "lavapotions:strider_foot_from_strider"
+}

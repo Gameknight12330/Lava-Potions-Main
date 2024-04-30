@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "lavapotions:block/dead_oak_planks"
+  }
+}

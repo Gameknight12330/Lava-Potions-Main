@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:redstone"
+        },
+        {
+            "item": "minecraft:kelp"
+        },
+        {
+            "item": "lavapotions:ravager_horn"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:volcanic"
+    }
+}

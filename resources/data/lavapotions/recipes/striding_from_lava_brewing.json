@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "lavapotions:strider_foot"
+        },
+        {
+            "item": "minecraft:warped_fungus"
+        },
+        {
+            "item": "minecraft:rabbit_foot"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:striding"
+    }
+}

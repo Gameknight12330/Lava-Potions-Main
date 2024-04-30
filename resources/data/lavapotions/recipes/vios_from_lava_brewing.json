@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "lavapotions:stairway"
+        },
+        {
+            "item": "lavapotions:highway"
+        },
+        {
+            "item": "minecraft:dragon_egg"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:vios"
+    }
+}

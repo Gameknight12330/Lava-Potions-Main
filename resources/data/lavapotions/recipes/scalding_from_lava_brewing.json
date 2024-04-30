@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:rotten_flesh"
+        },
+        {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        {
+            "item": "minecraft:pufferfish"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:scalding"
+    }
+}

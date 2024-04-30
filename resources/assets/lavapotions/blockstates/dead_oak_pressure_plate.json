@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "lavapotions:block/dead_oak_pressure_plate" },
+    "powered=true": { "model": "lavapotions:block/dead_oak_pressure_plate_down" }
+  }
+}

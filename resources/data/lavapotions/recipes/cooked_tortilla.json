@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "lavapotions:uncooked_tortilla"
+  },
+  "result": {
+    "item":  "lavapotions:cooked_tortilla",
+    "count": 1
+  }
+}

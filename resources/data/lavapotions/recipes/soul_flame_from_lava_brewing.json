@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:soul_sand"
+        },
+        {
+            "item": "minecraft:fire_charge"
+        },
+        {
+            "item": "minecraft:flint"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:soul_flame"
+    }
+}

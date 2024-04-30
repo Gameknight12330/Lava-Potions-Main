@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "entries": [
+        "lavapotions:guardian_eye_from_elder_guardian",
+        "lavapotions:ravager_horn_from_ravager",
+        "lavapotions:eaten_fish_from_ocelot",
+        "lavapotions:strider_foot_from_strider"
+    ]
+}

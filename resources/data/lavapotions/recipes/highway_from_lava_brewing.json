@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:conduit"
+        },
+        {
+            "item": "minecraft:nether_star"
+        },
+        {
+            "item": "minecraft:leather_boots"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:highway"
+    }
+}

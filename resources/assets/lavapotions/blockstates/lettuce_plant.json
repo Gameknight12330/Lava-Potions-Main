@@ -1,0 +1,9 @@
+{
+
+    "variants": {
+        "age=0": {"model": "lavapotions:block/lettuce_stage0"},
+        "age=1": {"model": "lavapotions:block/lettuce_stage1"},
+        "age=2": {"model": "lavapotions:block/lettuce_stage2"}
+    }
+
+}

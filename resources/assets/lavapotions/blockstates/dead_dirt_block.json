@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "": 
+    {
+      "model": "lavapotions:block/dead_dirt_block"
+    }
+  }
+}

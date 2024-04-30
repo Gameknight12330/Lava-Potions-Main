@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "lavapotions:block/dead_oak_log",
+    "side": "lavapotions:block/dead_oak_log"
+  }
+}

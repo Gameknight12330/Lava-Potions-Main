@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:apple"
+        },
+        {
+            "item": "minecraft:bone_meal"
+        },
+        {
+            "item": "minecraft:sweet_berries"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:flame_healing"
+    }
+}

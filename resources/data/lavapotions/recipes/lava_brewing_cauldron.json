@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "1 1",
+        "111",
+        "323"
+    ],
+    "key":
+    {
+        "1":
+        {
+            "item": "minecraft:crying_obsidian"
+        },
+        "2":
+        {
+            "item": "minecraft:campfire"
+        },
+        "3":
+        {
+           "item": "minecraft:iron_block"
+        }
+    },
+    "result":
+    {
+        "item": "lavapotions:lava_brewing_cauldron"
+    }
+}
+    

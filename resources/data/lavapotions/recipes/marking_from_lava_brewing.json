@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:scute"
+        },
+        {
+            "item": "minecraft:glow_ink_sac"
+        },
+        {
+            "item": "lavapotions:ravager_horn"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:marking"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "lavapotions:block/lettuce_stage0"
+  }
+}

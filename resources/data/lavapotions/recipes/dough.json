@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " 2 ",
+        "111",
+        "   "
+    ],
+    "key":
+    {
+        "1":
+        {
+            "item": "minecraft:wheat"
+        },
+        "2":
+        {
+            "item": "minecraft:egg"
+        }
+    },
+    "result":
+    {
+        "item": "lavapotions:dough",
+        "count": 3
+    }
+}
+    

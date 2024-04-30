@@ -1,0 +1,10 @@
+{
+    "conditions": [
+        {
+            "condition": "forge:loot_table_id",
+            "loot_table_id": "minecraft:entities/elder_guardian"
+        }
+    ],
+    "addition": "lavapotions:guardian_eye",
+    "type": "lavapotions:guardian_eye_from_elder_guardian"
+}

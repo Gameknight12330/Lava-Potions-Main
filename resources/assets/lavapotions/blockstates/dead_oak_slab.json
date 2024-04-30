@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "lavapotions:block/dead_oak_slab"
+    },
+    "type=double": {
+      "model": "lavapotions:block/dead_oak_planks"
+    },
+    "type=top": {
+      "model": "lavapotions:block/dead_oak_slab_top"
+    }
+  }
+}

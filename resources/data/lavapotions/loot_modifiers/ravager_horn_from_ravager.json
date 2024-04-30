@@ -1,0 +1,10 @@
+{
+    "conditions": [
+        {
+            "condition": "forge:loot_table_id",
+            "loot_table_id": "minecraft:entities/ravager"
+        }
+    ],
+    "addition": "lavapotions:ravager_horn",
+    "type": "lavapotions:ravager_horn_from_ravager"
+}

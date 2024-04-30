@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lavapotions:block/dead_grass_block_bottom"
+  }
+}

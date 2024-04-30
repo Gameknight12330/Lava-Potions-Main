@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "minecraft:diamond"
+        },
+        {
+            "item": "minecraft:rabbit_foot"
+        },
+        {
+            "item": "lavapotions:eaten_fish"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:burning_speed"
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.projectmushroom.lavapotions.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"refmap": "mixins.lavapotions.refmap.json",
+	"mixins": 
+	[
+	    "MixinStridingPlayer"
+	],
+	"client": 
+	[
+	
+	],
+	"minVersion": "0.8"
+}

@@ -1,0 +1,17 @@
+{
+    "type": "lavapotions:lava_brewing",
+    "ingredients": [
+        {
+            "item": "lavapotions:vios"
+        },
+        {
+            "item": "lavapotions:thanatos"
+        },
+        {
+            "item": "minecraft:piglin_head"
+        }
+    ],
+    "output": {
+        "item": "lavapotions:telikos"
+    }
+}
